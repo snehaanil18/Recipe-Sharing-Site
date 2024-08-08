@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Noto Serif Khitan Small Script static;
+}
+#navbar {
+    background-color: #ff6347;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+    height: 50px;
+    margin-bottom: 2px;
+}
+
+#logo{
+    display: flex;
+}
+
+#navcontent{
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+#navbar img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+#header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li:hover {
+    color: #836a5d;
+}
+
+#selected{
+    text-decoration: underline;
+}
+
+#login{
+    padding: 10px 10px;
+    background-color: #e4c22b;
+    border: 1px solid #ff6347;
+    border-radius: 5px;
+    width: 90px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+.collapsible{
+    display: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 200px);
+    margin: 50px auto;
+    padding: 20px 50px;
+}
+
+input,textarea{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff6347;
+}
+
+textarea:focus{
+    border-color: #ff6347;
+}
+
+button{
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.msg{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#submit{
+    padding: 10px 10px;
+    background-color: #ff6347;
+    border: 1px solid #ff6347;
+    border-radius: 5px;
+    width: 90px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 300px) and (max-width:900px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px;
+        height: auto;
+        padding-left: 5px;
+        width: auto;
+    }
+
+
+    #logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: calc(100%-50px);
+    }
+    
+    #navbar img {
+        height: 30px;
+        border-radius: 50%;
+        width: 40px;
+    }
+    
+    #header {
+        font-size: 18px;
+        margin-left: 4px;
+        margin-top: 4px;
+    }
+    
+    #navbar ul {
+        display: none;
+        list-style: none;
+        text-align: left;
+        overflow: hidden;
+        flex-direction: column;
+        position: relative;
+        gap: 30px;
+        font-size: 18px;
+        margin-left: 0px;
+        padding: 5px;
+    }
+
+    #navcontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #navbar ul li {
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    
+    #navbar ul li:hover {
+        color: #836a5d;
+    }
+    
+    #menu {
+        display: inline;
+        margin-left: 20px;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 5px 5px;
+        justify-content: flex-end;
+        background-color: #e4c22b;
+        border: 1px solid #ff6347;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #login{
+        display: none;
+    }
+    
+    #selected{
+        text-decoration: underline;
+    }
+    
+    #login{
+        padding: 7px 7px;
+        background-color: #e4c22b;
+        border: 1px solid #ff6347;
+        border-radius: 5px;
+        width: 70px;
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        width: calc(100% - 40px);
+        margin: 50px auto;
+        padding: 10px 15px;
+    }
+}

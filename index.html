@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+Khitan+Small+Script&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>The Cook Book</title>
+</head>
+
+<body>
+    <section>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="https://t3.ftcdn.net/jpg/04/41/73/28/360_F_441732816_Eo3fHdX3oImKtXdkYkktCrR1mbwAT9I6.jpg"
+                    alt="">
+                <p id="header">The Cook Book</p>
+                <button id="menu" class="collapsible"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+
+            <div id="navcontent">
+                <ul id="content" type="none">
+                    <li id="selected"><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+
+                <button id="login"><a href="login.html">Login</a></button>
+            </div>
+
+        </nav>
+    </section>
+
+    <main>
+        <section id="banner">
+            <img src="https://images.albertsons-media.com/is/image/ABS/MP-ShopAnyRecipe-24Q1-IntroBanner-2752x1152?$headline-hero-intro-web-desktop$&defaultImage=Not_Available"
+                alt="">
+            <h1>Explore Recipes!</h1>
+        </section>
+
+        <section id="home-recipes">
+            <div class="container">
+                <div class="row">
+                    <div class="food-card">
+                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F03%2F08%2F10813-best-chocolate-chip-cookies-mfs-step-7-148.jpg&w=160&q=60&c=sc&poi=auto&orient=true&h=90"
+                            alt="">
+                        <h2>Chocochip Cookies</h2>
+                    </div>
+                    <div class="food-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg0dkfsQ1Tree6tUfXRbmx7oa0IkGd1nXdEQ&s"
+                            alt="">
+                        <h2>Tomato Basil Bruschetta</h2>
+                    </div>
+                    <div class="food-card">
+                        <img src="https://thefirstyearblog.com/wp-content/uploads/2015/11/chocolate-chocolate-cake-1.png"
+                            alt="">
+                        <h2>Chocolate Cake</h2>
+                    </div>
+                    <div class="food-card">
+                        <img src="https://carlsbadcravings.com/wp-content/uploads/2022/07/pesto-pasta-10a.jpg"
+                            alt="">
+                        <h2>Pesto Pasta</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+    <section id="footer">
+        <div>
+
+        </div>
+    </section>
+
+    <script>
+        users = []
+        localStorage.setItem('users',JSON.stringify(users))
+        document.getElementById('menu').addEventListener('click', function () {
+            let myList = document.getElementById('content');
+            let login = document.getElementById('login');
+            if (myList.style.display === 'none' || myList.style.display === '' || login.style.display === 'none' || login.style.display === '') {
+                myList.style.display = 'block';
+                login.style.display = 'block'
+            } else {
+                myList.style.display = 'none';
+                login.style.display = 'none'
+            }
+        });
+    </script>
+
+</body>
+
+</html>
