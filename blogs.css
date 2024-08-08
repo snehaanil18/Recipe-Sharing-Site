@@ -149,12 +149,16 @@ ol ul{
         width: auto;
     }
 
+    #logo img{
+        width: 90px;
+        border: 1px solid black;
+    }
 
     #logo{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: calc(100%-50px);
+        width: 100%;
     }
     
     #navbar img {
@@ -201,16 +205,13 @@ ol ul{
         cursor: pointer;
         border-radius: 5px;
     }
-
-    #login{
-        display: none;
-    }
     
     #selected{
         text-decoration: underline;
     }
     
     #login{
+        display: none;
         padding: 7px 7px;
         width: 70px;
         font-size: 15px;
