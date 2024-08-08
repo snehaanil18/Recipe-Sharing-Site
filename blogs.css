@@ -3,7 +3,6 @@
     padding: 0px;
     font-family: Noto Serif Khitan Small Script static;
 }
-
 #navbar {
     background-color: #ff6347;
     display: flex;
@@ -78,52 +77,58 @@
     display: none;
 }
 
-.row{
-    display: flex;
-    margin: 20px;
-    padding: auto;
-}
-
-.card{
-    border: 1px solid rgb(238, 234, 234);
+h1{
+    text-align: center;
     margin: 10px;
-    padding: 20px;
-    width: 400px;
-    background-color: white;
+}
+
+#blog1{
+    display: flex;
+}
+
+.container{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: transform 0.2s;
+    margin: 18px 50px;
+    padding: 14px;
+    
 }
 
-.card:hover{
-    transform: scale(1.05);
-    border-color: #ff6347;
-}
-
-.card img{
-    display: block;
-    margin: 0 auto; 
-    width: 300px; 
-    height: 300px; 
-    max-width: 100%; 
-}
-
-.cardtext{
-    margin-top: 10px;
+.container img{
+    height: 300px;
+    width: 500px;
     padding: 10px;
+    border-radius: 15px;
+}
+
+.blog-content{
+    padding: 20px;
+    font-size: 18px;
 }
 
 p{
-    margin-top: 10px;
-    font-size: 17px;
+    margin-top: 5px;
 }
 
-ol{
-    padding-left: 15px;
+b{
+    font-size: 20px;
 }
 
-h2{
-    text-align: center;
+.blog-content ul{
+    padding:0px 15px;
+}
+
+.detailed-blog ol{
+    padding:0px 15px;
+}
+
+.detailed-blog{
+    margin: 0px 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+}
+
+ol ul{
+    padding-left: 10px;
 }
 
 .footer-legal{
@@ -225,42 +230,62 @@ h2{
         cursor: pointer;
     }
 
-    .row{
+    h1{
+        text-align: center;
+        margin: 10px;
+    }
+    
+    #blog1{
         display: flex;
         flex-direction: column;
-        margin: auto;
-        padding: auto;
     }
 
-    .card{
-        border: 1px solid rgb(238, 234, 234);
-        padding: 10px;
-        width: auto;
-        background-color: white;
+    .blog1-img{
+        text-align: center;
+    }
+    
+    .container{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        transition: transform 0.2s;
+        margin: 20px;
+        padding: 30px;
+        
     }
     
-    .card img{
-        display: block;
-        margin: 0 auto; 
-        width: 200px; 
-        height: 200px; 
-        max-width: 100%; 
+    .container img{
+        height: 200px;
+        width: 250px;
+        padding: 0px;
+        border-radius: 15px;
     }
     
-    .cardtext{
-        margin-top: 0px;
-        padding: 10px;
+    .blog-content{
+        padding: 20px;
+        font-size: 18px;
     }
     
     p{
-        margin-top: 10px;
-        font-size: 17px;
+        margin-top: 5px;
     }
     
-    h2{
-        text-align: center;
+    b{
+        font-size: 20px;
+    }
+    
+    .blog-content ul{
+        padding:0px 15px;
+    }
+    
+    .detailed-blog ol{
+        padding:0px 15px;
+    }
+    
+    .detailed-blog{
+        margin: 0px 10px;
+        padding: 8px 16px;
+        font-size: 18px;
+    }
+    
+    ol ul{
+        padding-left: 10px;
     }
 }

@@ -131,6 +131,12 @@ a:hover{
     color: #ff6347;
 }
 
+.footer-legal{
+    background-color: #ff6347d0;
+    text-align: center;
+    padding: 10px;
+}
+
 @media screen and (min-width: 300px) and (max-width:900px){
     #navbar {
         display: flex;

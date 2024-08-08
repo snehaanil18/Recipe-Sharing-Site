@@ -89,11 +89,12 @@ h1{
 
 .row{
     display: flex;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 h2{
     text-align: center;
+    font-size: medium;
 }
 
 .food-card{
@@ -108,6 +109,12 @@ h2{
 .food-card img{
     height: 250px;
     width: 100%;
+}
+
+.footer-legal{
+    background-color: #ff6347d0;
+    text-align: center;
+    padding: 10px;
 }
 
 @media screen and (min-width: 300px) and (max-width:900px){
