@@ -238,4 +238,15 @@ ol ul{
         border-radius: 15px;
     }
 
+    .blog-content{
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .detailed-blog{
+        margin: 0px 10px;
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
 }
