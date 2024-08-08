@@ -187,16 +187,7 @@ ol ul{
         flex-direction: column;
         justify-content: center;
     }
-    
-    #navbar ul li {
-        cursor: pointer;
-        transition: color 0.3s ease;
-    }
-    
-    #navbar ul li:hover {
-        color: #836a5d;
-    }
-    
+
     #menu {
         display: inline;
         margin-left: 20px;
@@ -221,18 +212,8 @@ ol ul{
     
     #login{
         padding: 7px 7px;
-        background-color: #e4c22b;
-        border: 1px solid #ff6347;
-        border-radius: 5px;
         width: 70px;
         font-size: 15px;
-        color: white;
-        cursor: pointer;
-    }
-
-    h1{
-        text-align: center;
-        margin: 10px;
     }
     
     #blog1{
@@ -245,7 +226,6 @@ ol ul{
     }
     
     .container{
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         margin: 20px;
         padding: 30px;
         
@@ -257,35 +237,5 @@ ol ul{
         padding: 0px;
         border-radius: 15px;
     }
-    
-    .blog-content{
-        padding: 20px;
-        font-size: 18px;
-    }
-    
-    p{
-        margin-top: 5px;
-    }
-    
-    b{
-        font-size: 20px;
-    }
-    
-    .blog-content ul{
-        padding:0px 15px;
-    }
-    
-    .detailed-blog ol{
-        padding:0px 15px;
-    }
-    
-    .detailed-blog{
-        margin: 0px 10px;
-        padding: 8px 16px;
-        font-size: 18px;
-    }
-    
-    ol ul{
-        padding-left: 10px;
-    }
+
 }
