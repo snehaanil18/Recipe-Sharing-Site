@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: white;
     height: 50px;
     margin-bottom: 2px;
@@ -63,17 +63,21 @@
 }
 
 #login{
-    padding: 10px 10px;
+    padding: 7px;
     background-color: #e4c22b;
     border: 1px solid #ff6347;
     border-radius: 5px;
     width: 90px;
-    font-size: 17px;
+    font-size: 18px;
     color: white;
     cursor: pointer;
 }
 
-.collapsible{
+#login a{
+    padding: 5px;
+}
+
+#menubutton{
     display: none;
 }
 
@@ -85,7 +89,7 @@
 
 #about{
     height: 470px;
-    width: 400px;
+    width: auto;
     border-radius: 20px;
     margin: 10px;
 }
@@ -128,13 +132,13 @@ p{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: calc(100%-50px);
+        width:100%;
     }
     
     #navbar img {
         height: 30px;
         border-radius: 50%;
-        width: 40px;
+        width: 30px;
     }
     
     #header {
@@ -171,37 +175,29 @@ p{
         color: #836a5d;
     }
     
-    #menu {
+    #menubutton{
         display: inline;
         margin-left: 20px;
         cursor: pointer;
-        font-size: 12px;
-        padding: 5px 5px;
+        padding: 3px;
         justify-content: flex-end;
         background-color: #e4c22b;
         border: 1px solid #ff6347;
         color: white;
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: 10px;
     }
 
-    #login{
-        display: none;
-    }
     
     #selected{
         text-decoration: underline;
     }
     
     #login{
-        padding: 7px 7px;
-        background-color: #e4c22b;
-        border: 1px solid #ff6347;
-        border-radius: 5px;
+        display: none;
+        padding: 7px;
         width: 70px;
         font-size: 15px;
-        color: white;
-        cursor: pointer;
     }
 
     .row{
