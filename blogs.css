@@ -67,6 +67,7 @@
 
 #selected{
     text-decoration: underline;
+    color: white;
 }
 
 #menubutton{
@@ -201,9 +202,6 @@ ol ul{
     
     #login{
         display: none;
-        padding: 7px;
-        width: 70px;
-        font-size: 15px;
         margin-left: 0px;
     }
     

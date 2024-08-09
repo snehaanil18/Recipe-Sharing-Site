@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: Noto Serif Khitan Small Script static;
 }
+
 #navbar {
     background-color: #ff6347;
     display: flex;
@@ -67,6 +68,7 @@
 
 #selected{
     text-decoration: underline;
+    color: white;
 }
 
 #menubutton{
@@ -187,9 +189,6 @@ p{
     
     #login{
         display: none;
-        padding: 7px;
-        width: 70px;
-        font-size: 15px;
         margin-left: 0px;
     }
 

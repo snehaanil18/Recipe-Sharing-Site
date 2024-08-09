@@ -14,6 +14,12 @@
     margin-bottom: 2px;
 }
 
+#navcontent button{
+    background-color: #ff6347;
+    border: none;
+    font-size: 18px;
+}
+
 #logo{
     display: flex;
 }
@@ -47,6 +53,7 @@
 #navbar a{
     text-decoration: none;
     color: white;
+    padding: 7px;
 }
 
 #navbar ul li {
@@ -60,21 +67,7 @@
 
 #selected{
     text-decoration: underline;
-}
-
-#login{
-    padding: 7px;
-    background-color: #e4c22b;
-    border: 1px solid #ff6347;
-    border-radius: 5px;
-    width: 90px;
-    font-size: 18px;
     color: white;
-    cursor: pointer;
-}
-
-#login a{
-    padding: 5px;
 }
 
 #menubutton{
@@ -132,7 +125,6 @@ h2{
         width: auto;
     }
 
-
     #logo{
         display: flex;
         flex-direction: row;
@@ -170,30 +162,17 @@ h2{
         flex-direction: column;
         justify-content: center;
     }
-    
-    #navbar ul li {
-        cursor: pointer;
-        transition: color 0.3s ease;
-    }
-    
-    #navbar ul li:hover {
-        color: #836a5d;
-    }
-    
+
     #menubutton {
         display: inline;
         cursor: pointer;
         justify-content: flex-end;
         background-color: #e4c22b;
         border: 1px solid #ff6347;
-        color: white;
+        color: rgb(255, 255, 255);
         cursor: pointer;
-        border-radius: 10px;
         padding: 3px;
-    }
-
-    #login{
-        display: none;
+        border-radius: 10px;
     }
     
     #selected{
@@ -201,14 +180,8 @@ h2{
     }
     
     #login{
-        padding: 7px;
-        background-color: #e4c22b;
-        border: 1px solid #ff6347;
-        border-radius: 5px;
-        width: 70px;
-        font-size: 15px;
-        color: white;
-        cursor: pointer;
+        display: none;
+        margin-left: 0px;
     }
     
     #banner img{

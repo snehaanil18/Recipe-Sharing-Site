@@ -1,9 +1,7 @@
-
-body {
+*{
+    margin: 0px;
+    padding: 0px;
     font-family: Noto Serif Khitan Small Script static;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
 }
 
 #navbar {
@@ -11,14 +9,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: white;
     height: 50px;
     margin-bottom: 2px;
 }
 
+#navcontent button{
+    background-color: #ff6347;
+    border: none;
+    font-size: 18px;
+}
+
 #logo{
     display: flex;
+}
+
+#navcontent{
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
 }
 
 #navbar img {
@@ -38,11 +48,13 @@ body {
     display: flex;
     gap: 60px;
     font-size: 18px;
+    margin-top: 10px;
 }
 
 #navbar a{
     text-decoration: none;
     color: white;
+    padding: 7px;
 }
 
 #navbar ul li {
@@ -54,7 +66,12 @@ body {
     color: #836a5d;
 }
 
-#menu{
+#selected{
+    text-decoration: underline;
+    color: white;
+}
+
+#menubutton{
     display: none;
 }
 
@@ -152,21 +169,21 @@ a:hover{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: calc(100%-50px);
+        width: 100%;
     }
-
+    
     #navbar img {
         height: 30px;
         border-radius: 50%;
-        width: 40px;
+        width: 30px;
     }
-
+    
     #header {
         font-size: 18px;
         margin-left: 4px;
         margin-top: 4px;
     }
-
+    
     #navbar ul {
         display: none;
         list-style: none;
@@ -186,23 +203,15 @@ a:hover{
         justify-content: center;
     }
 
-    #navbar ul li:hover {
-        color: #836a5d;
-    }
-
-    #menu {
+    #menubutton {
         display: inline;
-        margin-left: 20px;
         cursor: pointer;
-        font-size: 12px;
-        padding: 5px 5px;
         justify-content: flex-end;
         background-color: #e4c22b;
         border: 1px solid #ff6347;
-        color: white;
+        color: rgb(255, 255, 255);
         cursor: pointer;
-        border-radius: 5px;
-        height: 28px;
+        padding: 3px;
+        border-radius: 10px;
     }
-
 }
