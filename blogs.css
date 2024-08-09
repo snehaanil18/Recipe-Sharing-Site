@@ -73,7 +73,7 @@
     cursor: pointer;
 }
 
-#menu{
+#menubutton{
     display: none;
 }
 
@@ -187,7 +187,7 @@ ol ul{
         justify-content: center;
     }
 
-    #menu {
+    #menubutton {
         display: inline;
         cursor: pointer;
         justify-content: flex-end;
