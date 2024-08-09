@@ -14,7 +14,7 @@
     margin-bottom: 2px;
 }
 
-#content button{
+#navcontent button{
     background-color: #ff6347;
     border: none;
     font-size: 18px;
@@ -69,15 +69,11 @@
 }
 
 #login{
-    padding: 7px;
-    background-color: #e4c22b;
-    border: 1px solid #ff6347;
-    border-radius: 5px;
-    width: 90px;
-    font-size: 18px;
+
+
     color: white;
     cursor: pointer;
-    margin-left: 30px;
+
 }
 
 
