@@ -138,6 +138,14 @@ label{
     padding: 10px;
 }
 
+.social-links a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+}
+
 
 @media screen and (min-width: 300px) and (max-width:900px){
     #navbar {
