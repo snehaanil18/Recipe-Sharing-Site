@@ -15,20 +15,8 @@
     margin-bottom: 2px;
 }
 
-#navcontent button{
-    background-color: #ff6347;
-    border: none;
-    font-size: 18px;
-}
-
 #logo{
     display: flex;
-}
-
-#navcontent{
-   display: flex;
-   justify-content: space-between;
-   gap: 20px;
 }
 
 #navbar img {
@@ -42,39 +30,6 @@
     margin-top: 13px;
     margin-left: 10px;
 }
-
-#navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 60px;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-#navbar a{
-    text-decoration: none;
-    color: white;
-    padding: 7px;
-}
-
-#navbar ul li {
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-#navbar ul li:hover {
-    color: #836a5d;
-}
-
-#selected{
-    text-decoration: underline;
-    color: white;
-}
-
-#menubutton{
-    display: none;
-}
-
 
 .container {
     display: flex;
@@ -169,7 +124,6 @@ button:hover{
     #logo{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         width: 100%;
     }
     
@@ -184,35 +138,5 @@ button:hover{
         margin-left: 4px;
         margin-top: 4px;
     }
-    
-    #navbar ul {
-        display: none;
-        list-style: none;
-        text-align: left;
-        overflow: hidden;
-        flex-direction: column;
-        position: relative;
-        gap: 30px;
-        font-size: 18px;
-        margin-left: 0px;
-        padding: 5px;
-    }
 
-    #navcontent{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #menubutton {
-        display: inline;
-        cursor: pointer;
-        justify-content: flex-end;
-        background-color: #e4c22b;
-        border: 1px solid #ff6347;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-        padding: 3px;
-        border-radius: 10px;
-    }
 }
