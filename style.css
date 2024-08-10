@@ -124,14 +124,19 @@ h2{
     transform: scale(1.05); 
 }
 
-
-
-
 .footer-legal{
     position: relative;
     background-color: #ff6347d0;
     text-align: center;
     padding: 10px;
+}
+
+.social-links a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
 }
 
 @media screen and (min-width: 300px) and (max-width:900px){
