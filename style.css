@@ -3,6 +3,8 @@
     padding: 0px;
     font-family: Noto Serif Khitan Small Script static;
 }
+
+
 #navbar {
     background-color: #ff6347;
     display: flex;
@@ -74,6 +76,7 @@
     display: none;
 }
 
+
 #banner img{
     height: 400px;
     width: 100%;
@@ -107,6 +110,7 @@ h2{
     padding: 10px;
     border: 1px solid ghostwhite;
     text-align: center;
+    overflow: hidden;
     width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -116,7 +120,15 @@ h2{
     width: 100%;
 }
 
+.food-card:hover{
+    transform: scale(1.05); 
+}
+
+
+
+
 .footer-legal{
+    position: relative;
     background-color: #ff6347d0;
     text-align: center;
     padding: 10px;

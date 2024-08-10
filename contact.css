@@ -77,9 +77,9 @@
 .container{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    border: 1px solid salmon;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(214, 142, 142, 0.1);
     width: calc(100% - 200px);
     margin: 50px auto;
     padding: 20px 50px;
