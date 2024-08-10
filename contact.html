@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="contact.css">
 
 </head>
+
 <body>
     <section>
         <nav id="navbar">
@@ -26,9 +28,19 @@
                     alt="">
                 <p id="header">The Cook Book</p>
                 <button id="menubutton" aria-label="menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="25" viewBox="0,0,256,256">
-                        <g fill="#f4f2f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M51,46c1.104,0 2,0.895 2,2c0,1.105 -0.896,2 -2,2c-0.601,0 -37.399,0 -38,0c-1.104,0 -2,-0.895 -2,-2c0,-1.105 0.896,-2 2,-2c0.601,0 37.399,0 38,0zM51,30c1.104,0 2,0.895 2,2c0,1.105 -0.896,2 -2,2c-0.601,0 -37.399,0 -38,0c-1.104,0 -2,-0.895 -2,-2c0,-1.105 0.896,-2 2,-2c0.601,0 37.399,0 38,0zM51,14c1.104,0 2,0.895 2,2c0,1.105 -0.896,2 -2,2c-0.601,0 -37.399,0 -38,0c-1.104,0 -2,-0.895 -2,-2c0,-1.105 0.896,-2 2,-2c0.601,0 37.399,0 38,0z"></path></g></g>
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="25"
+                        viewBox="0,0,256,256">
+                        <g fill="#f4f2f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(4,4)">
+                                <path
+                                    d="M51,46c1.104,0 2,0.895 2,2c0,1.105 -0.896,2 -2,2c-0.601,0 -37.399,0 -38,0c-1.104,0 -2,-0.895 -2,-2c0,-1.105 0.896,-2 2,-2c0.601,0 37.399,0 38,0zM51,30c1.104,0 2,0.895 2,2c0,1.105 -0.896,2 -2,2c-0.601,0 -37.399,0 -38,0c-1.104,0 -2,-0.895 -2,-2c0,-1.105 0.896,-2 2,-2c0.601,0 37.399,0 38,0zM51,14c1.104,0 2,0.895 2,2c0,1.105 -0.896,2 -2,2c-0.601,0 -37.399,0 -38,0c-1.104,0 -2,-0.895 -2,-2c0,-1.105 0.896,-2 2,-2c0.601,0 37.399,0 38,0z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
                 </button>
             </div>
 
@@ -44,7 +56,7 @@
                 </ul>
 
 
-                
+
             </div>
 
         </nav>
@@ -53,22 +65,28 @@
     <main>
         <section>
             <div class="container">
+                <form id="contact-form" action="">
                 <label for="name">Full name</label>
                 <input id="name" placeholder="Enter your name" type="text">
+                <div id="name-error">*Please enter your full name.</div>
 
                 <label for="number">Phone Number</label>
                 <input id="number" placeholder="Enter phone number" type="text">
+                <div id="phone-error">*Please enter a valid 10-digit phone number.</div>
 
                 <label for="email">Email Address</label>
                 <input id="email" placeholder="Enter email address" type="text">
+                <div id="email-invalid">*Please enter a registered email address.</div>
 
                 <label for="message">Message</label>
                 <textarea id="message" rows="7" placeholder="Enter your Query"></textarea>
+                <div id="message-error">*Please enter your message.</div>
 
                 <div class="msg">
-                    <button id="submit">Send</button>
+                    <button onclick="send()" id="submit">Send</button>
+                    <div id="login-error">*Please login to send your message <a href="login.html">Login</a></div>
                 </div>
-
+            </form>
             </div>
         </section>
     </main>
@@ -77,7 +95,7 @@
         <div class="footer-legal">
             <div class="social-links">
                 <div>Follow us on:</div>
-                
+
                 <a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
                         y="0px" width="30" height="30" viewBox="0 0 50 50">
                         <path
@@ -102,13 +120,14 @@
                             d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z">
                         </path>
                     </svg>Linkedin</a>
-                    
+
             </div>
             <p>&copy; 2024 The Cook Book. All rights reserved.</p>
         </div>
     </footer>
-    
+
     <script>
+        //navbar menu list for mobile
         document.getElementById('menubutton').addEventListener('click', function () {
             let myList = document.getElementById('content');
             let login = document.getElementById('login');
@@ -120,6 +139,79 @@
                 login.style.display = 'none'
             }
         });
+
+        //message send
+        function send() {
+            
+            event.preventDefault()
+
+            //get details from input form
+            const name = document.getElementById('name').value;
+            const number = document.getElementById('number').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            //check local storage and get login details
+            let token = sessionStorage.getItem('token')
+
+            //form validation pattern
+            const namePattern = /^[A-Za-z\s]+$/;
+            const phonePattern = /^[0-9]{10}$/;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            //if already logged in
+            if (token) {
+
+                let isValid = true;
+
+                //check name format
+                if (!namePattern.test(name)) {
+                    document.getElementById('name-error').style.display = 'block';
+                    isValid = false;
+                }
+                else{
+                    document.getElementById('name-error').style.display = 'none';
+                }
+
+                //check phone number
+                if (!phonePattern.test(number)) {
+                    document.getElementById('phone-error').style.display = 'block';
+                    isValid = false;
+                }
+                else{
+                    document.getElementById('phone-error').style.display = 'none';
+                }
+
+                //check email format
+                if (!emailPattern.test(email)) {
+                    document.getElementById('email-invalid').style.display = 'block';
+                    isValid = false;
+                }
+                else{
+                    document.getElementById('email-invalid').style.display = 'none';
+                }
+
+                //check if field is empty
+                if (message == '') {
+                    document.getElementById('message-error').style.display = 'block';
+                    isValid = false;
+                }
+                else{
+                    document.getElementById('message-error').style.display = 'none';
+                }
+
+                //check if all inputs are valid
+                if (isValid) {
+                    alert('Form submitted successfully!');
+                    document.getElementById('contact-form').reset();
+                }
+            }
+            else {
+                document.getElementById('login-error').style.display = 'block';
+            }
+
+        }
     </script>
 </body>
+
 </html>
